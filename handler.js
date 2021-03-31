@@ -17,6 +17,8 @@ module.exports.createUser = async (event) => {
 
   await documentClient.put(params).promise();
 
+  console.log("TESTE");
+
   return {
     statusCode: 201,
     body: JSON.stringify(
